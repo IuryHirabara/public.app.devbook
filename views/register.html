@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    {{ template "head" }}
+    <title>Devbook - Cadastro</title>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/login.css">
+</head>
+
+<body>
+    <div class="container-login">
+        <div>
+            <form class="devbook-form" id="register-form">
+                <span>Crie sua conta</span>
+                <div>
+                    <input type="text" name="name" id="name" placeholder="Digite o seu nome" required>
+                </div>
+                <div>
+                    <input type="text" name="email" id="email" placeholder="Digite o seu e-mail" required>
+                </div>
+                <div>
+                    <input type="text" name="nick" id="nick" placeholder="Digite o seu nick" required>
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Digite a sua senha" required>
+                </div>
+                <div>
+                    <input type="password" name="re-password" id="re-password" placeholder="Confirme a sua senha"
+                        required>
+                </div>
+                <a href="/login">Clique aqui para fazer login</a>
+                <button class="btn-devbook" type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    {{ template "scripts" }}
+
+    <script src="/assets/js/register.js"></script>
+</body>
+
+</html>

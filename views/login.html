@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    {{ template "head" }}
+    <title>Devbook - Login</title>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/login.css">
+</head>
+
+<body>
+    <div class="container-login">
+        <div>
+            <form class="devbook-form" id="login">
+                <span>Bem vindo ao Devbook</span>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Digite o seu e-mail" required>
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Digite a sua senha" required>
+                </div>
+                <a href="/cadastro">Clique aqui para criar a sua conta</a>
+                <button class="btn-devbook" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    {{ template "scripts" }}
+
+    <script src="/assets/js/login.js"></script>
+</body>
+
+</html>
